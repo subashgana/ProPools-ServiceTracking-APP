@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="1dp"
+        android:left="-3dp"
+        android:right="-3dp"
+        android:top="-3dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/tab_seleted" />
+
+            <solid android:color="@color/white" />
+
+        </shape>
+    </item>
+</layer-list>

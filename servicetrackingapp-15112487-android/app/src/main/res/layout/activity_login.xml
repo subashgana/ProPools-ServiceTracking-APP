@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_blue"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@mipmap/app_logo"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:hint="Email"
+            android:maxLength="50"
+            android:paddingLeft="25dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:background="@mipmap/box_bar"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@mipmap/mail"
+            android:drawablePadding="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:maxLength="20"
+            android:imeOptions="actionDone"
+            android:background="@mipmap/box_bar"
+            android:drawableLeft="@mipmap/key"
+            android:drawablePadding="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="left|center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/cbRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/check_box_selector"
+                android:singleLine="true"
+                android:drawablePadding="5dp"
+                android:text="Remember Me"/>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/button_effect"
+            android:textColor="@color/white"
+            android:text="LOGIN"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+</LinearLayout>

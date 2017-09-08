@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_blue"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Info"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Name"/>
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edittext_bg_line"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="NFC ID"/>
+                <EditText
+                    android:id="@+id/etNFCid"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:layout_marginRight="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_bg_line"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Customer ID"/>
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg_line"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvStartService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_effect"
+                android:text="Start Service"
+                android:padding="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="@color/tab_seleted"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chemical Readings"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Hardness"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHardness"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+                    <Spinner
+                        android:visibility="invisible"
+                        android:id="@+id/spHardness"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_height="2dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Total Chlorine"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTotalChlorine"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+                    <Spinner
+                        android:id="@+id/spTotalChlorine"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Free Chlorine"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvFreeChlorine"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spFreeChlorine"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="PH"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPH"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spPH"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Alkalinity"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAlkalinity"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spAlkalinity"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Conditioner"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvConditioner1"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spConditioner1"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tab_seleted"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chemicals Used"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="CHL Powder"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvCHLPowder"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+                    <Spinner
+                        android:id="@+id/spCHLPowder"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="CHL Tablets"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvCHLTablets"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spCHLTablets"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Sodium CHL"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSodiumCHL"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spSodiumCHL"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="PH Minus"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPHminus"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spPHminus"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="PH Plus"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPHPLus"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+
+                    <Spinner
+                        android:id="@+id/spPHPLus"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Conditioner"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvConditioner2"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spConditioner2"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Clarifier"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSuperBlue"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spSuperBlue"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Metal Gone"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMetalGone"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spMetalGone"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Metal Out"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMetalOut"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spMetalOut"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Algaecide"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAlgaecide"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spAlgaecide"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="ALK. Control"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAlkalinityCount"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spAlkalinityCount"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Acid"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAcid"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        
+                        android:text=""/>
+
+                    <Spinner
+                        android:id="@+id/spAcid"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/edittext_bg"
+                        android:visibility="invisible"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tab_seleted"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MISC. NOTES"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/etMisc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:lines="4"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:scrollbars="none"
+                android:gravity="top"
+                android:background="@drawable/edittext_bg_rec"
+                android:layout_marginRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tab_seleted"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="+Photos"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivPhoto1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img"/>
+
+    <ImageView
+        android:id="@+id/ivPhoto2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img"/>
+
+    <ImageView
+        android:id="@+id/ivPhoto3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img"/>
+
+    <ImageView
+        android:id="@+id/ivPhoto4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img"/>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:enabled="true"
+                android:background="@drawable/button_effect"
+                android:text="Submit"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#023499</color>
+    <color name="colorPrimaryDark">#023499</color>
+    <color name="colorAccent">#023499</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab_seleted">#6dcff6</color>
+    <color name="header_blue">#023499</color>
+    <color name="bule_selected">#004f8e</color>
+    <color name="text_clor1">#93969a</color>
+    <color name="edit_back">#e2eaf8</color>
+    <color name="edit_border">#5674b9</color>
+    <color name="blue">#177bf7</color>
+</resources>

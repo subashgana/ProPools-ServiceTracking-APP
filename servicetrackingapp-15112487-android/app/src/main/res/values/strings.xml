@@ -1,0 +1,404 @@
+<resources>
+    <string name="app_name">Pro Pools</string>
+    <string name="server_not_responding">Server is not responding, Please try later.</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection.</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="ok">Ok</string>
+    <string name="take_from_camera">Take from camera</string>
+    <string name="take_from_gallery_">"Take from Gallery "</string>
+
+    <string-array name="arl_hardness">
+        <item>Select</item>
+        <item>0</item>
+        <item>100</item>
+        <item>250</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+
+    <string-array name="arl_total_chlorine">
+        <item>Select</item>
+        <item>0</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="arl_free_chlorine">
+        <item>Select</item>
+        <item>0</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="arl_ph">
+        <item>Select</item>
+        <item>-6</item>
+        <item>6.2</item>
+        <item>6.8</item>
+        <item>7.2</item>
+        <item>7.8</item>
+        <item>8.4</item>
+        <item>8.4+</item>
+    </string-array>
+
+    <string-array name="arl_alkalinity">
+        <item>Select</item>
+        <item>0</item>
+        <item>40</item>
+        <item>80</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+    </string-array>
+
+    <string-array name="arl_alkalinity_count">
+        <item>Select</item>
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>1 lb</item>
+        <item>2 lb</item>
+        <item>3 lb</item>
+        <item>4 lb</item>
+        <item>5 lb</item>
+    </string-array>
+
+    <string-array name="arl_conditioner1">
+        <item>Select</item>
+        <item>0 </item>
+        <item>30 </item>
+        <item>50 </item>
+        <item>100 </item>
+        <item>150 </item>
+        <item>300 </item>
+
+
+    </string-array>
+
+    <string-array name="arl_chl_powder">
+        <item>Select</item>
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>1 lb</item>
+        <item>2 lb</item>
+        <item>3 lb</item>
+        <item>4 lb</item>
+        <item>5 lb</item>
+    </string-array>
+
+    <string-array name="arl_chl_tablets">
+        <item>Select</item>
+        <item>1 Each</item>
+        <item>2 Each</item>
+        <item>3 Each</item>
+        <item>4 Each</item>
+        <item>5 Each</item>
+        <item>6 Each</item>
+        <item>7 Each</item>
+        <item>8 Each</item>
+        <item>9 Each</item>
+        <item>10 Each</item>
+    </string-array>
+
+    <string-array name="arl_super_blue">
+        <item>Select</item>
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>16 oz</item>
+        <item>17 oz</item>
+        <item>18 oz</item>
+        <item>19 oz</item>
+        <item>20 oz</item>
+    </string-array>
+
+    <string-array name="arl_acid">
+        <item>Select</item>
+       <!-- <item>1/4 Gal</item>
+        <item>1/2 Gal</item>
+        <item>3/4 Gal</item>
+        <item>1 Gal</item>
+        <item>2 Gal</item>
+        <item>3 Gal</item>
+        <item>4 Gal</item>
+        <item>5 Gal</item>-->
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>16 oz</item>
+        <item>17 oz</item>
+        <item>18 oz</item>
+        <item>19 oz</item>
+        <item>20 oz</item>
+        <item>24 oz</item>
+        <item>25 oz</item>
+        <item>26 oz</item>
+        <item>27 oz</item>
+        <item>28 oz</item>
+        <item>29 oz</item>
+        <item>30 oz</item>
+        <item>31 oz</item>
+        <item>32 oz</item>
+    </string-array>
+
+    <string-array name="arl_sodium_chl">
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>1 lb</item>
+        <item>2 lb</item>
+        <item>3 lb</item>
+        <item>4 lb</item>
+        <item>5 lb</item>
+    </string-array>
+
+    <string-array name="arl_ph_minus">
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>1 lb</item>
+        <item>2 lb</item>
+        <item>3 lb</item>
+        <item>4 lb</item>
+        <item>5 lb</item>
+    </string-array>
+
+    <string-array name="arl_ph_plus">
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>1 lb</item>
+        <item>2 lb</item>
+        <item>3 lb</item>
+        <item>4 lb</item>
+        <item>5 lb</item>
+    </string-array>
+
+    <string-array name="arl_metal_gone">
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>16 oz</item>
+        <item>17 oz</item>
+        <item>18 oz</item>
+        <item>19 oz</item>
+        <item>20 oz</item>
+    </string-array>
+
+    <string-array name="arl_metal_out">
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>16 oz</item>
+        <item>17 oz</item>
+        <item>18 oz</item>
+        <item>19 oz</item>
+        <item>20 oz</item>
+    </string-array>
+
+    <string-array name="arl_algaecide">
+        <item>1 oz</item>
+        <item>2 oz</item>
+        <item>3 oz</item>
+        <item>4 oz</item>
+        <item>5 oz</item>
+        <item>6 oz</item>
+        <item>7 oz</item>
+        <item>8 oz</item>
+        <item>9 oz</item>
+        <item>10 oz</item>
+        <item>11 oz</item>
+        <item>12 oz</item>
+        <item>13 oz</item>
+        <item>14 oz</item>
+        <item>15 oz</item>
+        <item>16 oz</item>
+        <item>17 oz</item>
+        <item>18 oz</item>
+        <item>19 oz</item>
+        <item>20 oz</item>
+    </string-array>
+
+    <string name="loading">Please wait..</string>
+    <string name="picture_error">Error in picture</string>
+    <string name="nfc_tag">NFC tag detected.</string>
+    <string name="invalid_nfc_tag">Nfc tag is not valid for this customer.</string>
+    <string name="warning">WARNING</string>
+    <string name="last_check_in">Last Check In</string>
+    <string name="logout">Logout</string>
+    <string name="sure_logout">Are you sure you want to logout?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="home">Home</string>
+    <string name="new_">New</string>
+    <string name="existing">Existing</string>
+    <string name="customer_info">Customer Info</string>
+    <string name="name">Name</string>
+    <string name="nfc_id">NFC ID</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="start_service">Start Service</string>
+    <string name="chemical_readings">Chemical Readings</string>
+    <string name="hardness">Hardness</string>
+    <string name="total_chlorine">Total Chlorine</string>
+    <string name="free_chlorine">Free Chlorine</string>
+    <string name="ph">PH</string>
+    <string name="alkalinity">Alkalinity</string>
+    <string name="conditioner">Conditioner</string>
+    <string name="chemical_used">Chemicals Used</string>
+    <string name="chl_powder">CHL Powder</string>
+    <string name="chl_tablets">CHL Tablets</string>
+    <string name="sodium_chl">Sodium CHL</string>
+    <string name="ph_minus">PH Minus</string>
+    <string name="ph_plus">PH Plus</string>
+    <string name="super_blue">CLARIFIER</string>
+    <string name="mental_gone">Mental Gone</string>
+    <string name="mental_out">Mental Out</string>
+    <string name="algaecide">Algaecide</string>
+    <string name="alkalinity_count">ALK. CONTROL</string>
+    <string name="acid">Acid</string>
+    <string name="misc_notes">MISC. NOTES</string>
+    <string name="photos">+Photos</string>
+    <string name="submit">Submit</string>
+    <string name="please_touch_the_phone_with_nfc_tag">Please touch the phone with NFC tag.</string>
+    <string name="please_upload_atleast_one_photo">Please upload at least 1 photo.</string>
+    <string name="please_touch_nfc_to_complet_transaction">Please touch the phone with NFC tag to complete the transaction.</string>
+    <string name="inform_will_lost_do_you_want_to_exit">THE INFORMATION IN THIS FORM WILL BE LOST, DO YOU WISH TO EXIT ?</string>
+    <string name="warning_infor_will_lost">WARNING INFORMATION WILL BE LOST, ARE YOU SURE ?</string>
+    <string name="are_you_sure_you_want_to_exit">Are you sure want to exit from Application?</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="please_enter_email_id">Please enter email id.</string>
+    <string name="please_enter_valid_email_id">Please enter vaild email id.</string>
+    <string name="please_enter_password">Please enter password.</string>
+    <string name="invalid_password_length">Invalid password length</string>
+    <string name="mins_ago">" mins ago."</string>
+    <string name="hours_ago">" hours ago."</string>
+    <string name="days_and">" days and "</string>
+    <string name="days_ago">" days ago"</string>
+    <string name="few_seconds_ago">few seconds ago.</string>
+    <string name="please_check_your_internet_connection_p">Please check your internet connection.</string>
+    <string name="please_enable_your_nfc_settings">Please enable nfc in settings</string>
+    <string name="sorry_device_doesnt_support_nfc">Sorry! your device doesn\'t support NFC</string>
+    <string name="nfc_tag_detected">NFC tag detected.</string>
+    <string name="nfc_tag_not_valid_for_custom">Nfc tag is not valid for this customer.</string>
+
+</resources>

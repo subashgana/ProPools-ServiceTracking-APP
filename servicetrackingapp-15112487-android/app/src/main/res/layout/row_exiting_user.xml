@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/pro"
+        android:id="@+id/ivProfilePic" />
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_marginLeft="15dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:text=""
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvLastLoginTime"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:text="Last Check In"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:text=""
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tvDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/icon1"
+        android:layout_marginLeft="15dp"/>
+
+</LinearLayout>

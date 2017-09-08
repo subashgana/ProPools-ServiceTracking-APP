@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_blue"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Info"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Name"/>
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edittext_bg_line"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="NFC id"/>
+
+                <EditText
+                    android:id="@+id/etNFCid"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:layout_marginRight="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_bg_line"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Address"/>
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg_line"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvStartService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_effect"
+                android:text="Start Service"
+                android:padding="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tab_seleted"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chemicals"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Hardness"/>
+
+                <EditText
+                    android:id="@+id/etHardness"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Total Chlorine"/>
+
+                <EditText
+                    android:id="@+id/etTotalChlorine"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Free Chlorine"/>
+
+                <EditText
+                    android:id="@+id/etFreeChlorine"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="PH"/>
+
+                <EditText
+                    android:id="@+id/etPH"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Alkalinity"/>
+
+                <EditText
+                    android:id="@+id/etAlkalinity"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Conditioner"/>
+
+                <EditText
+                    android:id="@+id/etConditioner1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tab_seleted"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chemicals Used"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="CHL Powder"/>
+
+                <EditText
+                    android:id="@+id/etCHLPowder"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="CHL Tablets"/>
+
+                <EditText
+                    android:id="@+id/etCHLTablets"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Sodium CHL"/>
+
+                <EditText
+                    android:id="@+id/etsodiumCHL"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="PH Plus"/>
+
+                <EditText
+                    android:id="@+id/etPHplus"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Conditioner"/>
+
+                <EditText
+                    android:id="@+id/etConditioner2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Super Blue"/>
+
+                <EditText
+                    android:id="@+id/etSuperbule"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Mental Gone"/>
+
+                <EditText
+                    android:id="@+id/etMentalgone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Mental Out"/>
+
+                <EditText
+                    android:id="@+id/etMentalout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Algaecide"/>
+
+                <EditText
+                    android:id="@+id/etAlgaecide"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Alkalinity Count"/>
+
+                <EditText
+                    android:id="@+id/etAlkanlinityCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Acid"/>
+
+                <EditText
+                    android:id="@+id/etAcid"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tab_seleted"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MISC. NOTES"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/etMisc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:lines="4"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:scrollbars="none"
+                android:gravity="top"
+                android:background="@drawable/edittext_bg_rec"
+                android:layout_marginRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tab_seleted"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="+Photos"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivPhoto1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img"/>
+
+    <ImageView
+        android:id="@+id/ivPhoto2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img"/>
+
+    <ImageView
+        android:id="@+id/ivPhoto3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img"/>
+
+    <ImageView
+        android:id="@+id/ivPhoto4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img"/>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_effect"
+                android:text="Submit"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
